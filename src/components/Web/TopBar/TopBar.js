@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Container, Button } from "semantic-ui-react";
+import { Container } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { map } from "lodash";
-import { Icon } from "../../../assets";
+
 import { Menu } from "../../../api";
-import { socialData } from "../../../utils";
+
 import "./TopBar.scss";
+import logo  from "../../../assets/png/logo.png";
+
 
 const menuController = new Menu();
 
@@ -28,7 +30,7 @@ export function TopBar() {
       <Container>
         <div className="top-bar__left">
           <Link to="/" className="logo">
-            <Icon.LogoWhite />
+          <img src={logo} alt="Logo" />
           </Link>
 
           <div className="menu">
@@ -40,17 +42,8 @@ export function TopBar() {
           </div>
         </div>
 
-        <div>
-          {map(socialData, (social) => (
-            <Button
-              key={social.type}
-              as="a"
-              target="_blank"
-              href={social.link}
-              color={social.type}
-              icon={social.type}
-            />
-          ))}
+        <div className="lema">
+           <p> "La búsqueda del conocimiento es un camino que, al igual que los pingüinos en la nieve, deja huellas profundas." </p>
         </div>
       </Container>
     </div>

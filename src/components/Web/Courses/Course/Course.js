@@ -1,19 +1,20 @@
 import React from "react";
 import { Image, Button, Rating } from "semantic-ui-react";
-import { ENV } from "../../../../utils";
+
 import "./Course.scss";
+import logo  from "../../../../assets/png/cursosimg.png";
 
 export function Course(props) {
   const { course } = props;
 
   return (
     <div className="course">
-      <Image src={`${ENV.BASE_PATH}/${course.miniature}`} />
+      <Image src={logo} alt="Logo" />
 
       <div className="course__info">
         <h3>{course.title}</h3>
         <p>{course.description}</p>
-        <Button as="a" href={course.url} primary fluid target="_blank">
+        <Button primary fluid target="_blank">
           ENTRAR EN EL CURSO
         </Button>
 

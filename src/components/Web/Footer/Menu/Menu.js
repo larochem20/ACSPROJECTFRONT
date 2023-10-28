@@ -6,13 +6,10 @@ import "./Menu.scss";
 export function Menu() {
   return (
     <div className="footer-menu">
-      <h4>Navegación</h4>
+      <h4>En ACS aprenderás sobre:</h4>
 
       <Grid columns={2}>
         <Grid.Column>
-          <Link to="#">
-            <Icon name="book" /> Cursos online
-          </Link>
           <Link to="#">
             <Icon name="code" /> Desarrollo web
           </Link>
@@ -29,10 +26,7 @@ export function Menu() {
             <Icon name="server" /> Sistemas / Servidores
           </Link>
           <Link to="#">
-            <Icon name="cogs" /> CMS
-          </Link>
-          <Link to="#">
-            <Icon name="user outline" /> Porfolio
+            <Icon name="cogs" /> Frontend
           </Link>
           <Link to="#">
             <Icon name="python" /> Backend

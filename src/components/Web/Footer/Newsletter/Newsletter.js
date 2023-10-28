@@ -29,7 +29,7 @@ export function Newsletter() {
 
   return (
     <div className="footer-newsletter">
-      <h4>¡Apuntarte y aprende!</h4>
+      <h4>¡Suscríbete y aprende con nosotros!</h4>
 
       <Form onSubmit={formik.handleSubmit}>
         <Form.Input

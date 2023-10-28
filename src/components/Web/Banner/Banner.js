@@ -7,12 +7,11 @@ export function Banner() {
     <div className="banner">
       <Container>
         <h1>
-          Aprende nuevas <br /> tecnologías web y movil
+        Explora nuestro océano de conocimientos <br /> y sumérgete en nuevas experiencias educativas.
         </h1>
+        
         <h2>
-          A través de cursos prácticos, concisos y actualizados, creados por
-          <br />
-          profesionales con años de experiencia.
+        ¡Comienza tu viaje hacia el aprendizaje y el crecimiento aquí!"
         </h2>
       </Container>
 

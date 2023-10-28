@@ -22,7 +22,11 @@ export function ClientLayout(props) {
         </Container>
         <Container>
           <span>© ALL RIGHTS RESERVED</span>
-          <span>AGUSTÍN NAVARRO GALDON | FRONTEND DEVELOPER</span>
+          <span>Luis Eduardo Aroche Muralles</span>
+          <span>Luis Enrique Juárez Nájera</span>
+          <span>Patricia Anahí Juárez Peña</span>
+          <span>Ender Alexander Carias Cervantes</span>
+          <span></span>
         </Container>
       </div>
     </div>

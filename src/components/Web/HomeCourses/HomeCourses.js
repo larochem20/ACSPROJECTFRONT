@@ -3,8 +3,9 @@ import { Container, Image, Button } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { map } from "lodash";
 import { Course } from "../../../api";
-import { ENV } from "../../../utils";
+
 import "./HomeCourses.scss";
+import logo  from "../../../assets/png/cursosimg.png";
 
 const courseController = new Course();
 
@@ -28,8 +29,8 @@ export function HomeCourses() {
 
       <div className="home-courses__all-courses">
         {map(courses, (course) => (
-          <a key={course._id} href={course.url} target="_blank">
-            <Image src={`${ENV.BASE_PATH}/${course.miniature}`} />
+          <a key={course._id} href={course.url} target="_blank" rel="noreferrer">
+            <Image src={logo} alt="Logo" />
             <div>
               <span>{course.title}</span>
               <span>{course.description}</span>
@@ -39,8 +40,8 @@ export function HomeCourses() {
       </div>
 
       <div className="home-courses__more">
-        <Button as={Link} to="/courses" primary>
-          Ver más
+        <Button as={Link} to="#" primary>
+          Proximamente más cursos...
         </Button>
       </div>
     </Container>

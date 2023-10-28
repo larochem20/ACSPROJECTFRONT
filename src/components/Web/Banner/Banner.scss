@@ -1,7 +1,7 @@
 @import "~/src/scss/index.scss";
 
 .banner {
-  height: 500px;
+  height: 1000px;
   background-image: url("../../../assets/jpg/home-banner.jpg");
   background-position: center;
   background-size: cover;
@@ -28,8 +28,9 @@
   h1 {
     color: $text-light;
     font-size: 60px;
-    line-height: 55px;
+    line-height:55px;
     z-index: 1;
+    margin-top: -650px;
   }
 
   h2 {

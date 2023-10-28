@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Image, Button, Icon, Confirm } from "semantic-ui-react";
+import { Button, Icon, Confirm } from "semantic-ui-react";
 import { BasicModal } from "../../../Shared";
-import { ENV } from "../../../../utils";
+import logo  from "../../../../assets/png/cursosimg.png";
 import { Course } from "../../../../api";
 import { useAuth } from "../../../../hooks";
 import { CourseForm } from "../CourseForm";
@@ -38,7 +38,7 @@ export function CourseItem(props) {
     <>
       <div className="course-item">
         <div className="course-item__info">
-          <Image src={`${ENV.BASE_PATH}/${course.miniature}`} />
+        <img src={logo} alt="Logo" />
           <div>
             <p>{course.title}</p>
           </div>

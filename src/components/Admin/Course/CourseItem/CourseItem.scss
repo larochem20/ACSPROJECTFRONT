@@ -23,8 +23,14 @@
     }
 
     p {
-      margin: 0;
+      margin-left: 15px;
       font-weight: bold;
+      color: black;
     }
+  }
+  img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
   }
 }

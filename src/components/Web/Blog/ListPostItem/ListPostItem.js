@@ -1,9 +1,9 @@
 import React from "react";
-import { Image } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { DateTime } from "luxon";
-import { ENV } from "../../../../utils";
 import "./ListPostItem.scss";
+import logo  from "../../../../assets/jpg/blogs.jpg";
+
 
 export function ListPostItem(props) {
   const { post } = props;
@@ -11,7 +11,7 @@ export function ListPostItem(props) {
 
   return (
     <Link className="list-post-item" to={`/blog/${post.path}`}>
-      <Image src={`${ENV.BASE_PATH}/${post.miniature}`} fluid />
+      <img src={logo} alt="Logo" />
       <h2>{post.title}</h2>
       <span>
         {DateTime.fromISO(date.toISOString())

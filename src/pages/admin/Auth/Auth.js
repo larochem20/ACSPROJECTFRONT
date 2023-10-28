@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Tab } from "semantic-ui-react";
 import { RegisterForm, LoginForm } from "../../../components/Admin/Auth";
-import { Icon } from "../../../assets";
+import logo  from "../../../assets/png/logo.png";
 import "./Auth.scss";
 
 export function Auth() {
@@ -30,7 +30,7 @@ export function Auth() {
 
   return (
     <div className="auth">
-      <Icon.LogoWhite className="logo" />
+      <img src={logo} alt="Logo" />
 
       <Tab
         panes={panes}

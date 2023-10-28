@@ -1,29 +1,17 @@
 import React from "react";
-import { Button } from "semantic-ui-react";
-import { map } from "lodash";
-import { Icon } from "../../../../assets";
-import { socialData } from "../../../../utils";
+
+
+import logo from "../../../../assets/png/logo.png";
+
 import "./Info.scss";
 
 export function Info() {
   return (
     <div className="footer-info">
-      <Icon.LogoWhite className="logo" />
+          <img src={logo} alt="Logo" />
       <p>
-        Entra en el mundo del desarrollo web, disfruta creando proyectos de todo
-        tipo, deja que tú imaginación fluya y crea verdaderas maravillas!!
+        ¡Aprende lo mejor, con los mejores!
       </p>
-
-      {map(socialData, (social) => (
-        <Button
-          key={social.type}
-          as="a"
-          target="_blank"
-          href={social.link}
-          color={social.type}
-          icon={social.type}
-        />
-      ))}
     </div>
   );
 }

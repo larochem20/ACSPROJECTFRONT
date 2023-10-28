@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon } from "../../assets";
+import logo  from "../../assets/png/logo.png";
 import { AdminMenu, Logout } from "../../components/Admin/AdminLayout";
 import "./AdminLayout.scss";
 
@@ -9,7 +9,7 @@ export function AdminLayout(props) {
   return (
     <div className="admin-layout">
       <div className="admin-layout__left">
-        <Icon.LogoWhite className="logo" />
+      <img src={logo} alt="Logo" />
         <AdminMenu />
       </div>
       <div className="admin-layout__right">
